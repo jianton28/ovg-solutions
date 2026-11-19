@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>METODOGER — Solutions OVG | Estrategia de Negocios Internacionales y Desarrollo Sustentable</title>
+  <meta name="description" content="Firma de consultoría gerencial internacional fundada en 1985 por el Dr. Omar Valenti González. Especialistas en empresa familiar, planes de sucesión, negocios internacionales y desarrollo PyME." />
+  
+  <!-- Tailwind CSS vía CDN con configuración personalizada -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ovg: {
+              red: '#B91C1C',
+              redDark: '#991B1B',
+              redLight: '#FEF2F2',
+              green: '#3F7D20',
+              greenDark: '#2D5A16',
+              greenLight: '#F0FDF4',
+              dark: '#111827',
+              slate: '#374151',
+              bg: '#F9FAFB'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Favicon Oficial con el Símbolo Institucional -->
+  <link rel="icon" type="image/png" href="assets/img/logo-icon.png" />
+  
+  <!-- Estilos Corporativos Personalizados -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="bg-gray-50 text-gray-900 antialiased flex flex-col min-h-screen selection:bg-red-700 selection:text-white">
+
+  <!-- ==========================================
+       BARRA DE NAVEGACIÓN (GLASSMORPHISM)
+  =========================================== -->
+  <header class="navbar-glass sticky top-0 z-50 transition-all duration-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        
+        <!-- Logotipo Oficial METODOGER Solutions OVG -->
+        <a href="index.html" class="flex items-center group py-1" aria-label="Inicio - METODOGER Solutions OVG">
+          <img src="assets/img/logo.png" alt="METODOGER Solutions OVG - Consultoría Estratégica Internacional" class="h-12 sm:h-14 md:h-16 w-auto object-contain transition duration-200 group-hover:opacity-95" />
+        </a>
+
+        <!-- Enlaces Principales Desktop -->
+        <nav class="hidden md:flex items-center space-x-8" aria-label="Navegación principal">
+          <a href="index.html" class="text-sm font-bold text-red-700 border-b-2 border-red-700 pb-1" aria-current="page">Inicio</a>
+          <a href="organizacion.html" class="text-sm font-medium text-gray-600 hover:text-red-700 transition">Nuestra Organización</a>
+          <a href="servicios-contacto.html" class="text-sm font-medium text-gray-600 hover:text-red-700 transition">Servicios y Casos</a>
+          <a href="servicios-contacto.html#presupuesto" class="px-5 py-2.5 rounded-xl bg-red-700 hover:bg-red-800 text-white text-sm font-bold shadow-sm hover:shadow-md transition flex items-center gap-2">
+            <span>Solicitar Presupuesto</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+          </a>
+        </nav>
+
+        <!-- Botón Menú Móvil -->
+        <button id="mobile-menu-btn" class="md:hidden p-2.5 rounded-xl text-gray-700 hover:bg-gray-100 transition" aria-label="Abrir menú de navegación" aria-expanded="false">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Menú Desplegable Móvil -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 px-4 pt-3 pb-5 space-y-2 shadow-xl">
+      <a href="index.html" class="block px-3.5 py-2.5 rounded-xl bg-red-50 text-red-700 font-bold text-sm">Inicio</a>
+      <a href="organizacion.html" class="block px-3.5 py-2.5 rounded-xl text-gray-700 hover:bg-gray-50 font-medium text-sm">Nuestra Organización</a>
+      <a href="servicios-contacto.html" class="block px-3.5 py-2.5 rounded-xl text-gray-700 hover:bg-gray-50 font-medium text-sm">Servicios y Casos de Éxito</a>
+      <a href="servicios-contacto.html#presupuesto" class="block text-center mt-3 px-4 py-2.5 rounded-xl bg-red-700 text-white font-bold text-sm shadow">
+        Solicitar Presupuesto
+      </a>
+    </div>
+  </header>
+
+  <!-- ==========================================
+       HERO SECTION INTERACTIVA
+  =========================================== -->
+  <section class="relative bg-white border-b border-gray-200 overflow-hidden">
+    <!-- Fondos decorativos sutiles -->
+    <div class="absolute inset-0 pointer-events-none opacity-40 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16 relative">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+        
+        <!-- Columna Izquierda: Propuesta de Valor Ejecutiva -->
+        <div class="lg:col-span-6 space-y-6">
+          
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-green-50 border border-green-200 shadow-sm">
+            <span class="w-2.5 h-2.5 rounded-full bg-green-600 animate-ping"></span>
+            <span class="text-xs font-bold text-green-800 tracking-wide uppercase">Consultoría Estratégica Internacional • Fundada en 1985</span>
+          </div>
+
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black text-gray-900 tracking-tight leading-tight">
+            Estrategia de Negocios Internacionales y <span class="text-red-700">Desarrollo Sustentable</span>
+          </h1>
+
+          <p class="text-base sm:text-lg text-gray-600 leading-relaxed">
+            Asesoramos a directores generales, PyMEs y empresas familiares en su transformación organizativa, estructuración de protocolos de sucesión gerencial, alianzas de joint venture y expansión internacional hacia mercados globales, bajo la dirección del <strong>Dr. Omar Valenti González</strong> (PhD, MBA, DHRM).
+          </p>
+
+          <!-- Acciones Principales -->
+          <div class="flex flex-wrap gap-4 pt-2">
+            <a href="servicios-contacto.html#presupuesto" class="px-6 py-3.5 rounded-xl bg-red-700 hover:bg-red-800 text-white font-bold text-sm shadow-md hover:shadow-lg transition flex items-center gap-2.5">
+              <span>Agendar Diagnóstico Ejecutivo</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+            </a>
+            <a href="organizacion.html" class="px-6 py-3.5 rounded-xl bg-white hover:bg-gray-100 text-gray-900 font-bold text-sm border border-gray-300 shadow-sm transition">
+              Conocer Trayectoria
+            </a>
+          </div>
+
+          <!-- Micro Barra de Acreditaciones Multilaterales -->
+          <div class="pt-4 border-t border-gray-100">
+            <p class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2">Acreditaciones y Respaldos Multilaterales:</p>
+            <div class="flex flex-wrap items-center gap-3 text-xs font-semibold text-gray-700">
+              <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-gray-100 border border-gray-200">
+                <svg class="w-3.5 h-3.5 text-green-700" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Banco Mundial (WB)
+              </span>
+              <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-gray-100 border border-gray-200">
+                <svg class="w-3.5 h-3.5 text-green-700" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                BID (Banco Interamericano)
+              </span>
+              <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-gray-100 border border-gray-200">
+                <svg class="w-3.5 h-3.5 text-green-700" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Unión Europea (UE)
+              </span>
+              <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-gray-100 border border-gray-200">
+                <svg class="w-3.5 h-3.5 text-green-700" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                ALIDE & CAN
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Columna Derecha: Carrusel Interactivo de Entrevistas TV en YouTube -->
+        <div class="lg:col-span-6">
+          <div class="bg-gray-900 rounded-3xl p-4 sm:p-6 shadow-2xl border border-gray-800 text-white">
+            
+            <!-- Barra Superior del Reproductor -->
+            <div class="flex items-center justify-between mb-3.5">
+              <div class="flex items-center gap-2">
+                <span class="px-2.5 py-1 rounded-md bg-red-600 text-white text-[10px] font-extrabold uppercase tracking-wider">
+                  En Medios y TV
+                </span>
+                <span id="video-programa" class="text-xs font-semibold text-gray-300 truncate max-w-[200px] sm:max-w-none">
+                  Entrevista Especial TV
+                </span>
+              </div>
+
+              <!-- Controles y Contador -->
+              <div class="flex items-center gap-2">
+                <span id="video-contador" class="text-xs font-mono text-gray-400 mr-1">1 / 4</span>
+                <button onclick="anteriorVideo()" class="p-2 rounded-lg bg-gray-800 hover:bg-gray-700 text-white transition focus:outline-none" title="Entrevista anterior" aria-label="Entrevista anterior">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7"/></svg>
+                </button>
+                <button onclick="siguienteVideo()" class="p-2 rounded-lg bg-gray-800 hover:bg-gray-700 text-white transition focus:outline-none" title="Siguiente entrevista" aria-label="Siguiente entrevista">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"/></svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- Iframe Responsivo de YouTube -->
+            <div class="relative aspect-video rounded-2xl overflow-hidden bg-black shadow-inner">
+              <iframe id="hero-video-frame" class="w-full h-full" src="" title="Entrevista Televisiva Dr. Omar Valenti González" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <!-- Información Dinámica del Video -->
+            <div class="mt-4 pt-3 border-t border-gray-800">
+              <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-3">
+                <div class="space-y-1">
+                  <h2 id="video-titulo" class="text-sm sm:text-base font-bold text-white leading-snug">Cargando entrevista...</h2>
+                  <p id="video-desc" class="text-xs text-gray-400 line-clamp-2 leading-relaxed"></p>
+                </div>
+                <a id="video-link-youtube" href="#" target="_blank" rel="noopener noreferrer" class="shrink-0 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-gray-800 hover:bg-gray-700 text-xs font-semibold text-gray-200 transition">
+                  <span>YouTube</span>
+                  <svg class="w-3.5 h-3.5 text-red-500" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                </a>
+              </div>
+
+              <!-- Indicadores de Navegación del Carrusel -->
+              <div class="flex items-center justify-between mt-4">
+                <div id="video-indicadores" class="flex items-center gap-2"></div>
+                <span class="text-[11px] text-gray-400 font-medium">Dr. Omar Valenti González en Televisión</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       BANNER DE MÉTRICAS ANIMADAS (STATS)
+  =========================================== -->
+  <section class="bg-gradient-to-r from-green-900 via-green-800 to-green-900 text-white py-12 relative overflow-hidden shadow-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center divide-y-2 divide-green-700/50 sm:divide-y-0 sm:divide-x-2 sm:divide-green-700/50">
+        
+        <div class="pt-4 sm:pt-0 sm:px-4">
+          <div class="text-4xl sm:text-5xl font-black tracking-tight" data-target="38" data-suffix="+">0</div>
+          <p class="text-xs sm:text-sm font-bold text-green-200 uppercase tracking-wider mt-2">Años de Trayectoria</p>
+          <p class="text-xs text-green-300/80 mt-0.5">Fundada el 18/06/1985 en Caracas</p>
+        </div>
+
+        <div class="pt-4 sm:pt-0 sm:px-4">
+          <div class="text-4xl sm:text-5xl font-black tracking-tight" data-target="600" data-suffix="+">0</div>
+          <p class="text-xs sm:text-sm font-bold text-green-200 uppercase tracking-wider mt-2">Empresas Asesoradas</p>
+          <p class="text-xs text-green-300/80 mt-0.5">PyMEs, corporaciones y directivos</p>
+        </div>
+
+        <div class="pt-4 sm:pt-0 sm:px-4">
+          <div class="text-4xl sm:text-5xl font-black tracking-tight" data-target="30" data-suffix="+">0</div>
+          <p class="text-xs sm:text-sm font-bold text-green-200 uppercase tracking-wider mt-2">Sectores Industriales</p>
+          <p class="text-xs text-green-300/80 mt-0.5">Petroquímica, banca, salud, TI y manufactura</p>
+        </div>
+
+        <div class="pt-4 sm:pt-0 sm:px-4">
+          <div class="text-4xl sm:text-5xl font-black tracking-tight" data-target="15" data-suffix="+">0</div>
+          <p class="text-xs sm:text-sm font-bold text-green-200 uppercase tracking-wider mt-2">Países de Cooperación</p>
+          <p class="text-xs text-green-300/80 mt-0.5">América Latina, Europa, Asia y EE.UU.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       PILARES ESTRATÉGICOS CORPORATIVOS
+  =========================================== -->
+  <section class="py-16 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-3xl mx-auto mb-14">
+      <span class="inline-block px-3 py-1 rounded-full bg-red-50 text-red-700 text-xs font-bold uppercase tracking-widest border border-red-200 mb-2">
+        Pilares de Consultoría
+      </span>
+      <h2 class="text-3xl sm:text-4xl font-black text-gray-900 tracking-tight">Soluciones Gerenciales de Alto Impacto</h2>
+      <p class="text-gray-600 text-sm sm:text-base mt-3 leading-relaxed">
+        Conjugamos más de tres décadas de investigación-acción aplicada con las mejores prácticas académicas de Europa, EE.UU. y Asia para crear modelos transferibles y sostenibles.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      
+      <!-- Pilar 1: Empresa Familiar -->
+      <div class="bg-white p-8 rounded-3xl border border-gray-200 shadow-sm card-hover card-hover-red flex flex-col justify-between">
+        <div>
+          <div class="w-12 h-12 rounded-2xl bg-red-50 text-red-700 flex items-center justify-center font-black text-lg border border-red-100 mb-6">
+            01
+          </div>
+          <span class="text-xs font-bold uppercase text-red-700 tracking-wider">Continuidad Generacional</span>
+          <h3 class="text-xl font-black text-gray-900 mt-1 mb-3">Empresa Familiar y Sucesión</h3>
+          <p class="text-sm text-gray-600 leading-relaxed">
+            Diagnóstico integral del sistema Familia-Empresa-Propiedad, elaboración del <em>Familygrama</em> estructural (pasado, presente y futuro), redacción del Protocolo Familiar y planes de perennidad para una transición pacífica y rentable.
+          </p>
+        </div>
+        <div class="pt-6 mt-6 border-t border-gray-100">
+          <a href="servicios-contacto.html#empresa-familiar" class="inline-flex items-center gap-2 text-sm font-bold text-red-700 hover:text-red-800 transition">
+            <span>Ver módulo de Empresa Familiar</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Pilar 2: Negocios Internacionales -->
+      <div class="bg-white p-8 rounded-3xl border border-gray-200 shadow-sm card-hover card-hover-green flex flex-col justify-between">
+        <div>
+          <div class="w-12 h-12 rounded-2xl bg-green-50 text-green-700 flex items-center justify-center font-black text-lg border border-green-100 mb-6">
+            02
+          </div>
+          <span class="text-xs font-bold uppercase text-green-700 tracking-wider">Apertura Global</span>
+          <h3 class="text-xl font-black text-gray-900 mt-1 mb-3">Negocios Internacionales y Joint Ventures</h3>
+          <p class="text-sm text-gray-600 leading-relaxed">
+            Metodología propia de internacionalización hacia mercados meta, búsqueda y selección de socios comerciales, representación de firmas internacionales, misiones empresariales y vinculación con embajadas y cámaras binacionales.
+          </p>
+        </div>
+        <div class="pt-6 mt-6 border-t border-gray-100">
+          <a href="servicios-contacto.html#servicios" class="inline-flex items-center gap-2 text-sm font-bold text-green-700 hover:text-green-800 transition">
+            <span>Explorar portafolio internacional</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Pilar 3: Centro PyME y CEDIE -->
+      <div class="bg-white p-8 rounded-3xl border border-gray-200 shadow-sm card-hover flex flex-col justify-between">
+        <div>
+          <div class="w-12 h-12 rounded-2xl bg-gray-100 text-gray-900 flex items-center justify-center font-black text-lg border border-gray-200 mb-6">
+            03
+          </div>
+          <span class="text-xs font-bold uppercase text-gray-600 tracking-wider">Innovación y Competitividad</span>
+          <h3 class="text-xl font-black text-gray-900 mt-1 mb-3">Centro PyME y Centro CEDIE</h3>
+          <p class="text-sm text-gray-600 leading-relaxed">
+            Tutoría y desarrollo del sentido empresarial sustentable a través del <em>CEDIE</em> (Centro de Creación, Investigación y Desarrollo de la Iniciativa Empresarial). Reingeniería de procesos, descripción de cargos y programas de capital humano.
+          </p>
+        </div>
+        <div class="pt-6 mt-6 border-t border-gray-100">
+          <a href="organizacion.html#cedie" class="inline-flex items-center gap-2 text-sm font-bold text-gray-800 hover:text-red-700 transition">
+            <span>Conocer estructura del CEDIE</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================
+       SECCIÓN DE CALL TO ACTION INTERMEDIO
+  =========================================== -->
+  <section class="bg-gray-100 border-y border-gray-200 py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center justify-between gap-6">
+      <div class="max-w-2xl">
+        <h3 class="text-2xl font-black text-gray-900">¿Requiere estructurar una estrategia internacional o resolver la sucesión en su empresa?</h3>
+        <p class="text-sm text-gray-600 mt-1">Nuestra firma coordina diagnósticos preliminares confidenciales para juntas directivas y accionistas.</p>
+      </div>
+      <div class="flex items-center gap-4 shrink-0">
+        <a href="servicios-contacto.html#presupuesto" class="px-6 py-3.5 rounded-xl bg-red-700 hover:bg-red-800 text-white text-sm font-bold shadow transition">
+          Solicitar Presupuesto Formal
+        </a>
+        <a href="https://wa.me/584166280650" target="_blank" class="px-5 py-3.5 rounded-xl bg-white hover:bg-gray-50 text-gray-800 text-sm font-bold border border-gray-300 shadow-sm transition flex items-center gap-2">
+          <span>WhatsApp Directo</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FOOTER COMPLETO Y DATOS CORPORATIVOS
+  =========================================== -->
+  <footer class="bg-gray-900 text-gray-300 mt-auto border-t border-gray-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+      
+      <!-- Columna 1: Identidad Corporativa Oficial -->
+      <div class="space-y-4">
+        <a href="index.html" class="inline-block p-2.5 rounded-2xl bg-white shadow-sm border border-gray-100 hover:shadow transition">
+          <img src="assets/img/logo.png" alt="METODOGER Solutions OVG" class="h-11 sm:h-12 w-auto object-contain" />
+        </a>
+        <p class="text-xs text-gray-400 leading-relaxed">
+          Firma especializada en Consultoría Gerencial, Negocios Internacionales, Protocolo de Sucesión Familiar y Desarrollo de Capital Humano desde 1985.
+        </p>
+        <div class="text-[11px] text-gray-400 space-y-1 pt-1">
+          <p><strong>RIF:</strong> J-00225515-3 • <strong>NIT:</strong> 0082497250</p>
+          <p><strong>Registro Mercantil:</strong> 18/06/1985 (Nº 13, Tomo 61A) • Actualiz. 09/12/1996</p>
+        </div>
+      </div>
+
+      <!-- Columna 2: Sedes Venezuela y EE.UU. -->
+      <div class="space-y-3">
+        <h4 class="text-xs font-extrabold text-white uppercase tracking-wider">Sedes y Enlaces Oficiales</h4>
+        <div class="text-xs space-y-3 text-gray-400">
+          <div>
+            <p class="font-bold text-gray-200">Sede Principal — Caracas, Venezuela:</p>
+            <p>Apartado de Correos Nº 47223, Los Chaguaramos, Caracas 1041-A.</p>
+            <p class="mt-1">Oficina: +58 212-6934413 / 6937536</p>
+          </div>
+          <div>
+            <p class="font-bold text-gray-200">Enlace Internacional — EE.UU.:</p>
+            <p>ShipNet 5-1107, 2240 North West, 87th Avenue, Miami, FL 33172.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Columna 3: Canales Directos -->
+      <div class="space-y-3">
+        <h4 class="text-xs font-extrabold text-white uppercase tracking-wider">Contacto Directo</h4>
+        <ul class="text-xs space-y-2 text-gray-400">
+          <li>
+            <strong class="text-gray-200">Móvil / WhatsApp:</strong><br/>
+            +58 416-6280650 / +58 412-3800659
+          </li>
+          <li>
+            <strong class="text-gray-200">Correos Oficiales:</strong><br/>
+            <a href="mailto:omar.valenti@solutionsovg.com" class="hover:text-white transition">omar.valenti@solutionsovg.com</a><br/>
+            <a href="mailto:metodogerintlbusiness2018@gmail.com" class="hover:text-white transition">metodogerintlbusiness2018@gmail.com</a>
+          </li>
+          <li class="pt-1">
+            <a href="https://www.linkedin.com/in/omar-valenti-gonzalez-4135361b" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-blue-400 hover:text-blue-300 font-semibold">
+              <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              <span>LinkedIn Dr. Omar Valenti</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Columna 4: Suscripción a Boletín Ejecutivo -->
+      <div class="space-y-3">
+        <h4 class="text-xs font-extrabold text-white uppercase tracking-wider">Boletín Ejecutivo</h4>
+        <p class="text-xs text-gray-400 leading-relaxed">
+          Reciba análisis periódicos sobre competitividad internacional, oportunidades de exportación y gestión estratégica PyME.
+        </p>
+        <form class="boletin-form space-y-2">
+          <input type="email" required placeholder="correo@empresa.com" class="w-full px-3.5 py-2.5 rounded-xl bg-gray-800 border border-gray-700 text-xs text-white placeholder-gray-500 focus:outline-none focus:border-red-600 transition" />
+          <button type="submit" class="w-full py-2.5 rounded-xl bg-red-700 hover:bg-red-800 text-white text-xs font-bold shadow transition">
+            Suscribirme al Boletín
+          </button>
+        </form>
+      </div>
+
+    </div>
+
+    <!-- Barra de Derechos Reservados -->
+    <div class="border-t border-gray-800 py-6">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-gray-500">
+        <p>© 2026 METODOGER S.R.L. / OVG Solutions. Todos los derechos reservados. Caracas, Venezuela.</p>
+        <div class="flex items-center space-x-6">
+          <a href="index.html" class="hover:text-gray-300 transition">Inicio</a>
+          <a href="organizacion.html" class="hover:text-gray-300 transition">Organización</a>
+          <a href="servicios-contacto.html" class="hover:text-gray-300 transition">Servicios</a>
+          <a href="servicios-contacto.html#presupuesto" class="hover:text-gray-300 transition">Presupuesto</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>

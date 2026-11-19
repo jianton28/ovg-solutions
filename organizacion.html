@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nuestra Organización, Liderazgo y Red Global | METODOGER — Solutions OVG</title>
+  <meta name="description" content="Conozca el perfil ejecutivo del Dr. Omar Valenti González, la historia de METODOGER desde 1985, el organigrama del CEDIE y nuestra red mundial de cooperación en más de 15 países." />
+
+  <!-- Tailwind CSS vía CDN con configuración personalizada -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ovg: {
+              red: '#B91C1C',
+              redDark: '#991B1B',
+              redLight: '#FEF2F2',
+              green: '#3F7D20',
+              greenDark: '#2D5A16',
+              greenLight: '#F0FDF4',
+              dark: '#111827',
+              slate: '#374151',
+              bg: '#F9FAFB'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Favicon Oficial con el Símbolo Institucional -->
+  <link rel="icon" type="image/png" href="assets/img/logo-icon.png" />
+  
+  <!-- Estilos Corporativos Personalizados -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="bg-gray-50 text-gray-900 antialiased flex flex-col min-h-screen selection:bg-red-700 selection:text-white">
+
+  <!-- ==========================================
+       BARRA DE NAVEGACIÓN (GLASSMORPHISM)
+  =========================================== -->
+  <header class="navbar-glass sticky top-0 z-50 transition-all duration-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        
+        <!-- Logotipo Oficial METODOGER Solutions OVG -->
+        <a href="index.html" class="flex items-center group py-1" aria-label="Inicio - METODOGER Solutions OVG">
+          <img src="assets/img/logo.png" alt="METODOGER Solutions OVG - Consultoría Estratégica Internacional" class="h-12 sm:h-14 md:h-16 w-auto object-contain transition duration-200 group-hover:opacity-95" />
+        </a>
+
+        <!-- Enlaces Desktop -->
+        <nav class="hidden md:flex items-center space-x-8" aria-label="Navegación principal">
+          <a href="index.html" class="text-sm font-medium text-gray-600 hover:text-red-700 transition">Inicio</a>
+          <a href="organizacion.html" class="text-sm font-bold text-red-700 border-b-2 border-red-700 pb-1" aria-current="page">Nuestra Organización</a>
+          <a href="servicios-contacto.html" class="text-sm font-medium text-gray-600 hover:text-red-700 transition">Servicios y Casos</a>
+          <a href="servicios-contacto.html#presupuesto" class="px-5 py-2.5 rounded-xl bg-red-700 hover:bg-red-800 text-white text-sm font-bold shadow-sm hover:shadow-md transition flex items-center gap-2">
+            <span>Solicitar Presupuesto</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+          </a>
+        </nav>
+
+        <!-- Botón Menú Móvil -->
+        <button id="mobile-menu-btn" class="md:hidden p-2.5 rounded-xl text-gray-700 hover:bg-gray-100 transition" aria-label="Abrir menú de navegación" aria-expanded="false">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Menú Desplegable Móvil -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 px-4 pt-3 pb-5 space-y-2 shadow-xl">
+      <a href="index.html" class="block px-3.5 py-2.5 rounded-xl text-gray-700 hover:bg-gray-50 font-medium text-sm">Inicio</a>
+      <a href="organizacion.html" class="block px-3.5 py-2.5 rounded-xl bg-red-50 text-red-700 font-bold text-sm">Nuestra Organización</a>
+      <a href="servicios-contacto.html" class="block px-3.5 py-2.5 rounded-xl text-gray-700 hover:bg-gray-50 font-medium text-sm">Servicios y Casos de Éxito</a>
+      <a href="servicios-contacto.html#presupuesto" class="block text-center mt-3 px-4 py-2.5 rounded-xl bg-red-700 text-white font-bold text-sm shadow">
+        Solicitar Presupuesto
+      </a>
+    </div>
+  </header>
+
+  <!-- ==========================================
+       CABECERA DE SECCIÓN / BREADCRUMB
+  =========================================== -->
+  <section class="bg-white border-b border-gray-200 py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <nav class="flex items-center gap-2 text-xs font-semibold text-gray-500 mb-2">
+        <a href="index.html" class="hover:text-red-700 transition">Inicio</a>
+        <span>/</span>
+        <span class="text-gray-900 font-bold">Nuestra Organización</span>
+      </nav>
+      <h1 class="text-3xl sm:text-4xl font-black text-gray-900 tracking-tight">
+        Liderazgo Directivo, Estructura y Red Global
+      </h1>
+      <p class="text-sm sm:text-base text-gray-600 mt-2 max-w-3xl">
+        Conozca la trayectoria de más de 38 años de METODOGER / OVG Solutions, el perfil de su presidente fundador el Dr. Omar Valenti González y nuestras alianzas en América, Europa y Asia.
+      </p>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       PERFIL EJECUTIVO: DR. OMAR VALENTI GONZÁLEZ
+  =========================================== -->
+  <section class="py-14 sm:py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <!-- Tarjeta Principal del Perfil -->
+    <div class="bg-gray-900 rounded-3xl p-6 sm:p-10 lg:p-12 text-white shadow-2xl border border-gray-800 relative overflow-hidden mb-14">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start relative z-10">
+        
+        <!-- Datos Principales y Trayectoria con Fotografía Oficial -->
+        <div class="lg:col-span-8 space-y-5">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-700/80 text-white text-xs font-extrabold uppercase tracking-wider border border-red-500">
+            <span>Presidencia Ejecutiva & Fundador</span>
+          </div>
+
+          <div class="flex flex-col sm:flex-row items-start gap-5">
+            <div class="w-28 h-36 rounded-2xl overflow-hidden border-2 border-red-700/60 shadow-xl shrink-0 bg-gray-800">
+              <img src="assets/img/omar-valenti.jpg" alt="Dr. Omar Valenti González" class="w-full h-full object-cover" />
+            </div>
+            <div>
+              <h2 class="text-3xl sm:text-4xl font-black tracking-tight text-white">Dr. Omar Valenti González</h2>
+              <p class="text-green-400 font-bold text-sm sm:text-base tracking-wide mt-1">
+                PhD • MBA • DHRM • GCIPD • ACMI • Lic. Relaciones Industriales
+              </p>
+              <p class="text-xs text-gray-400 mt-2 font-medium">
+                Consultor Gerencial Internacional y Profesor Agregado UCV • Fundador de METODOGER (1985)
+              </p>
+            </div>
+          </div>
+
+          <p class="text-gray-300 text-sm sm:text-base leading-relaxed">
+            Venezolano, nacido en San Juan de los Morros (Edo. Guárico). Consultor gerencial internacional y profesor universitario de pregrado y postgrado en la <strong>Universidad Central de Venezuela (UCV)</strong> en FACES, CEAP, EAC y Facultad de Ciencias. Posee más de tres décadas y media liderando diagnósticos estratégicos, procesos de sucesión en empresas familiares, reingeniería organizativa y alianzas transfronterizas para más de 600 corporaciones en América Latina, Europa, Estados Unidos y Asia.
+          </p>
+
+          <!-- Propósito Profesional Destacado -->
+          <div class="p-4 rounded-2xl bg-gray-800/90 border-l-4 border-red-600 border-t border-r border-b border-gray-700 shadow-md">
+            <p class="text-[11px] font-bold text-red-400 uppercase tracking-widest mb-1.5 flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-red-500"></span>
+              <span>Propósito Profesional</span>
+            </p>
+            <blockquote class="text-xs sm:text-sm text-gray-100 italic leading-relaxed">
+              &ldquo;Contribuir a mejorar la rentabilidad, productividad, desempeño y logro de objetivos de empresas, pequeños negocios, organizaciones y gobiernos de América Latina y el Caribe.&rdquo;
+            </blockquote>
+          </div>
+
+          <!-- Progresión de Cargos y Sectores -->
+          <div class="p-4 rounded-2xl bg-gray-800/70 border border-gray-700/80 space-y-2 text-xs leading-relaxed">
+            <p class="text-[11px] font-bold text-green-400 uppercase tracking-wider flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-green-500"></span>
+              <span>Progresión Jerárquica y Experiencia Multisectorial</span>
+            </p>
+            <p class="text-gray-200">
+              Cuenta con un recorrido profesional y directivo integral, desempeñando posiciones a nivel de <strong class="text-white">pasante, profesional, coordinador, gerente, director y vicepresidente</strong> en <strong class="text-white">banca, industria manufacturera, automotriz, químico, petroquímico, petrolero, universidades, gobierno y empresas del Estado</strong>.
+            </p>
+          </div>
+
+          <!-- Badges de Membresías Globales -->
+          <div class="pt-1">
+            <p class="text-xs font-extrabold text-gray-400 uppercase tracking-wider mb-2.5">Membresías Profesionales e Institucionales Internacionales:</p>
+            <div class="flex flex-wrap gap-2 text-xs font-semibold">
+              <span class="px-3 py-1 rounded-lg bg-gray-800 text-gray-200 border border-gray-700">Instituto Británico de Gerencia (IM, UK)</span>
+              <span class="px-3 py-1 rounded-lg bg-gray-800 text-gray-200 border border-gray-700">Chartered Institute of Personnel & Development (CIPD, UK)</span>
+              <span class="px-3 py-1 rounded-lg bg-gray-800 text-gray-200 border border-gray-700">The Family Firm Institute (FFI, EE.UU.)</span>
+              <span class="px-3 py-1 rounded-lg bg-gray-800 text-gray-200 border border-gray-700">International Council for Small Business (ICSB, EE.UU.)</span>
+              <span class="px-3 py-1 rounded-lg bg-gray-800 text-gray-200 border border-gray-700">IIRA Suiza (Miembro de 6 Comités Mundiales)</span>
+              <span class="px-3 py-1 rounded-lg bg-gray-800 text-gray-200 border border-gray-700">American Society for Training & Development (ASTD, EE.UU.)</span>
+            </div>
+          </div>
+
+          <!-- Contacto Directo en el Perfil y Acciones -->
+          <div class="pt-3 border-t border-gray-800/80 space-y-3">
+            <div class="flex flex-wrap items-center gap-2 text-xs">
+              <span class="font-bold text-gray-400 uppercase tracking-wider text-[11px] mr-1">Contacto Directo:</span>
+              <a href="mailto:omarvalentig@gmail.com" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-gray-800 hover:bg-gray-700 text-green-400 hover:text-green-300 font-semibold border border-gray-700 transition" title="Correo Personal / Directo">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                <span>omarvalentig@gmail.com</span>
+              </a>
+              <a href="mailto:omar.valenti@solutionsovg.com" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-gray-800 hover:bg-gray-700 text-gray-300 hover:text-white font-semibold border border-gray-700 transition" title="Correo Corporativo Oficial">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+                <span>omar.valenti@solutionsovg.com</span>
+              </a>
+            </div>
+
+            <div class="flex flex-wrap gap-3 pt-1">
+              <a href="https://www.linkedin.com/in/omar-valenti-gonzalez-4135361b" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold shadow transition inline-flex items-center gap-2">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                <span>Ver Perfil en LinkedIn</span>
+              </a>
+              <a href="servicios-contacto.html#presupuesto" class="px-5 py-2.5 rounded-xl bg-white hover:bg-gray-100 text-gray-900 text-xs font-bold shadow transition">
+                Agendar Consulta Directa
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Columna Lateral: Roles Docentes y Multilaterales -->
+        <div class="lg:col-span-4 space-y-4">
+          <div class="bg-gray-800/90 border border-gray-700 rounded-2xl p-6 space-y-4 shadow-lg">
+            <h3 class="text-xs font-bold text-green-400 uppercase tracking-widest border-b border-gray-700 pb-2">
+              Acreditación y Consultoría Global
+            </h3>
+
+            <div class="space-y-3 text-xs text-gray-300">
+              <div>
+                <p class="font-bold text-white">Registro de Consultores Multilaterales:</p>
+                <p class="text-gray-400 mt-0.5">Banco Mundial (WB), BID, Unión Europea (UE), ALIDE, Fondo de Inversiones de Venezuela (FIV) y Comunidad Andina (CAN).</p>
+              </div>
+
+              <div>
+                <p class="font-bold text-white">Panel de Competitividad:</p>
+                <p class="text-gray-400 mt-0.5">Colaborador del panel de expertos externos del <em>World Competitiveness Report</em> (IMD, Lausana, Suiza).</p>
+              </div>
+
+              <div>
+                <p class="font-bold text-white">Instructor Externo Especializado:</p>
+                <p class="text-gray-400 mt-0.5">Motorola University (Latin American Operations Division, Florida, EE.UU.), CIED, Colegio de Ingenieros de Venezuela, UNESR y Academia Diplomática del MRE.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Bloque de Formación Académica Rigurosa -->
+    <div class="mb-16">
+      <div class="text-center max-w-2xl mx-auto mb-10">
+        <span class="text-xs font-bold uppercase text-red-700 tracking-wider">Solidez Académica Internacional</span>
+        <h3 class="text-2xl sm:text-3xl font-black text-gray-900 mt-1">Formación y Altos Estudios</h3>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm card-hover card-hover-red">
+          <span class="text-xs font-bold text-red-700 uppercase">Pregrado • 1978</span>
+          <h4 class="text-base font-bold text-gray-900 mt-1">Lic. en Relaciones Industriales</h4>
+          <p class="text-xs text-gray-500 font-medium mt-0.5">Universidad de Carabobo (Valencia, Venezuela)</p>
+          <p class="text-xs text-gray-600 mt-2 leading-relaxed">
+            Formación base en estructura del trabajo, legislación laboral, relaciones obrero-patronales y teoría del comportamiento.
+          </p>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm card-hover card-hover-red">
+          <span class="text-xs font-bold text-red-700 uppercase">Postgrado • 1980 - 1981</span>
+          <h4 class="text-base font-bold text-gray-900 mt-1">Gerencia de RRHH y Personal (DHRM)</h4>
+          <p class="text-xs text-gray-500 font-medium mt-0.5">Sheffield Hallam University & Londres (UK)</p>
+          <p class="text-xs text-gray-600 mt-2 leading-relaxed">
+            Especialización en desarrollo organizacional, dinámicas de liderazgo directivo y gestión moderna de personal.
+          </p>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm card-hover card-hover-green">
+          <span class="text-xs font-bold text-green-700 uppercase">Maestría (MBA) • 1982</span>
+          <h4 class="text-base font-bold text-gray-900 mt-1">MBA en Negocios Internacionales</h4>
+          <p class="text-xs text-gray-500 font-medium mt-0.5">Schiller International University (Londres / París)</p>
+          <p class="text-xs text-gray-600 mt-2 leading-relaxed">
+            Administración internacional, estrategias comerciales transfronterizas, finanzas y gobernanza directiva global.
+          </p>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm card-hover card-hover-green">
+          <span class="text-xs font-bold text-green-700 uppercase">Doctorado • 1992</span>
+          <h4 class="text-base font-bold text-gray-900 mt-1">Estudios Doctorales Europeos</h4>
+          <p class="text-xs text-gray-500 font-medium mt-0.5">Univ. Autónoma de Barcelona & Durham Univ. (UK)</p>
+          <p class="text-xs text-gray-600 mt-2 leading-relaxed">
+            Creación y dirección de empresas, desarrollo de PyMEs sustentables, innovación de base tecnológica e incubación.
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ==========================================
+         MISIÓN, VISIÓN Y VALORES INSTITUCIONALES
+    =========================================== -->
+    <div class="mb-16">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+        
+        <div class="bg-white p-8 rounded-3xl border border-gray-200 shadow-sm card-hover">
+          <div class="flex items-center gap-2.5 mb-3">
+            <span class="w-3 h-3 rounded-full bg-red-700"></span>
+            <span class="text-xs font-bold uppercase text-red-700 tracking-wider">Propósito Organizacional</span>
+          </div>
+          <h3 class="text-2xl font-black text-gray-900 mb-3">Misión Institucional</h3>
+          <p class="text-sm text-gray-600 leading-relaxed">
+            Desarrollar acciones, programas y consultorías de excelente calidad técnica y humana, sustentadas en la innovación sistemática, la creatividad metodológica y la investigación-acción aplicada, para contribuir decisivamente a la rentabilidad, sustentabilidad y competitividad de las empresas, garantizando la satisfacción integral de nuestros clientes y el progreso de sus comunidades.
+          </p>
+        </div>
+
+        <div class="bg-white p-8 rounded-3xl border border-gray-200 shadow-sm card-hover">
+          <div class="flex items-center gap-2.5 mb-3">
+            <span class="w-3 h-3 rounded-full bg-green-700"></span>
+            <span class="text-xs font-bold uppercase text-green-700 tracking-wider">Horizonte Estratégico</span>
+          </div>
+          <h3 class="text-2xl font-black text-gray-900 mb-3">Visión Institucional</h3>
+          <p class="text-sm text-gray-600 leading-relaxed">
+            Consolidarnos como la firma líder y de referencia internacional en el análisis y resolución de problemas gerenciales, apoyando el surgimiento de organizaciones innovadoras y sustentables basadas en competencias empresariales distintivas, con capacidad para expandirse con éxito en mercados globales y preservar su patrimonio a través de generaciones.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Valores Institucionales -->
+      <div class="bg-white p-8 rounded-3xl border border-gray-200 shadow-sm">
+        <h4 class="text-xs font-extrabold uppercase text-gray-400 tracking-wider mb-6 text-center">Nuestros Valores Fundamentales</h4>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="p-4 rounded-2xl bg-gray-50 border border-gray-100">
+            <h5 class="font-bold text-gray-900 text-sm">1. Rigor Metodológico</h5>
+            <p class="text-xs text-gray-600 mt-1 leading-relaxed">Soluciones soportadas en teorías validadas internacionalmente y modelos de investigación aplicada.</p>
+          </div>
+          <div class="p-4 rounded-2xl bg-gray-50 border border-gray-100">
+            <h5 class="font-bold text-gray-900 text-sm">2. Ética y Confidencialidad</h5>
+            <p class="text-xs text-gray-600 mt-1 leading-relaxed">Absoluta reserva en procesos familiares, financieros y transacciones societarias complejas.</p>
+          </div>
+          <div class="p-4 rounded-2xl bg-gray-50 border border-gray-100">
+            <h5 class="font-bold text-gray-900 text-sm">3. Enfoque Práctico-Acción</h5>
+            <p class="text-xs text-gray-600 mt-1 leading-relaxed">Acompañamiento colaborativo con entregables concretos, mediciones claras y aplicación en el terreno.</p>
+          </div>
+          <div class="p-4 rounded-2xl bg-gray-50 border border-gray-100">
+            <h5 class="font-bold text-gray-900 text-sm">4. Visión Sustentable</h5>
+            <p class="text-xs text-gray-600 mt-1 leading-relaxed">Construcción de empresas perennes que trasciendan generaciones y respeten su entorno productivo.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==========================================
+         ORGANIGRAMA INSTITUCIONAL Y CENTRO CEDIE
+    =========================================== -->
+    <div id="cedie" class="bg-white p-8 sm:p-10 rounded-3xl border border-gray-200 shadow-sm mb-16">
+      <div class="text-center max-w-3xl mx-auto mb-10">
+        <span class="text-xs font-bold uppercase text-green-700 tracking-wider">Arquitectura Operativa</span>
+        <h3 class="text-2xl sm:text-3xl font-black text-gray-900 mt-1">Organigrama y División CEDIE</h3>
+        <p class="text-xs sm:text-sm text-gray-600 mt-2">
+          Estructura modular orientada a la excelencia en consultoría, dividida en cuatro direcciones operativas con respaldo del Centro de Iniciativa Empresarial (CEDIE).
+        </p>
+      </div>
+
+      <!-- Diagrama de Flujo del Organigrama -->
+      <div class="space-y-6 max-w-4xl mx-auto">
+        
+        <!-- Nivel 1: Junta Directiva -->
+        <div class="flex justify-center">
+          <div class="w-full sm:w-72 p-4 rounded-2xl bg-gray-900 text-white text-center shadow-md border border-gray-800">
+            <p class="text-[11px] font-bold tracking-wider uppercase text-red-400">Nivel Superior</p>
+            <h4 class="text-sm font-black mt-0.5">Junta Directiva</h4>
+            <p class="text-[11px] text-gray-400 mt-0.5">Gobernanza y Visión Estratégica</p>
+          </div>
+        </div>
+
+        <!-- Conector Vertical -->
+        <div class="w-0.5 h-6 bg-gray-300 mx-auto"></div>
+
+        <!-- Nivel 2: Presidencia Ejecutiva + Asesoría Jurídica -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-xl mx-auto">
+          <div class="p-4 rounded-2xl bg-red-50 border-2 border-red-600 text-center shadow-sm">
+            <p class="text-[11px] font-bold tracking-wider uppercase text-red-700">Dirección General</p>
+            <h4 class="text-sm font-extrabold text-gray-900 mt-0.5">Presidencia Ejecutiva</h4>
+            <p class="text-xs text-gray-700 font-medium mt-1">Dr. Omar Valenti González</p>
+            <p class="text-[11px] text-gray-500">Vidalina Velásquez Capote (Socia Directora)</p>
+          </div>
+          <div class="p-4 rounded-2xl bg-gray-50 border border-gray-300 text-center shadow-sm flex flex-col justify-center">
+            <p class="text-[11px] font-bold tracking-wider uppercase text-gray-600">Soporte Legal</p>
+            <h4 class="text-sm font-extrabold text-gray-900 mt-0.5">Asesoría Jurídica Externa</h4>
+            <p class="text-[11px] text-gray-600 mt-1">Mercantil, Corporativo y Tributario</p>
+          </div>
+        </div>
+
+        <!-- Conector Vertical -->
+        <div class="w-0.5 h-6 bg-gray-300 mx-auto"></div>
+
+        <!-- Nivel 3: 4 Divisiones Operativas -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          
+          <div class="p-5 rounded-2xl bg-white border border-gray-200 shadow-sm text-center card-hover">
+            <div class="w-8 h-8 rounded-lg bg-gray-100 text-gray-800 font-bold text-xs flex items-center justify-center mx-auto mb-2">D1</div>
+            <h5 class="text-xs font-bold text-gray-900 uppercase">Servicios de Apoyo y Administración</h5>
+            <p class="text-[11px] text-gray-600 mt-2">Logística, finanzas internas, control operativo y gestión tecnológica.</p>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-white border border-gray-200 shadow-sm text-center card-hover card-hover-green">
+            <div class="w-8 h-8 rounded-lg bg-green-50 text-green-700 font-bold text-xs flex items-center justify-center mx-auto mb-2">D2</div>
+            <h5 class="text-xs font-bold text-green-800 uppercase">Estrategia de Negocios Internacionales</h5>
+            <p class="text-[11px] text-gray-600 mt-2">Alianzas globales, joint ventures, misiones comerciales e import/export.</p>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-white border border-gray-200 shadow-sm text-center card-hover card-hover-red">
+            <div class="w-8 h-8 rounded-lg bg-red-50 text-red-700 font-bold text-xs flex items-center justify-center mx-auto mb-2">D3</div>
+            <h5 class="text-xs font-bold text-red-800 uppercase">Consultoría Gerencial y Outsourcing</h5>
+            <p class="text-[11px] text-gray-600 mt-2">Diagnóstico organizativo, reingeniería, manuales de cargo y RRHH.</p>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-green-50/60 border border-green-200 shadow-sm text-center card-hover">
+            <div class="w-8 h-8 rounded-lg bg-green-700 text-white font-bold text-xs flex items-center justify-center mx-auto mb-2">D4</div>
+            <h5 class="text-xs font-bold text-green-900 uppercase">Iniciativa Empresarial / CEDIE</h5>
+            <p class="text-[11px] text-gray-700 mt-2">Incubación, investigación aplicada, PyMEs y programas sustentables.</p>
+          </div>
+
+        </div>
+
+        <!-- Talentos Humanos Asociados -->
+        <div class="p-4 rounded-xl bg-gray-50 border border-gray-200 text-center max-w-2xl mx-auto">
+          <p class="text-xs font-bold text-gray-800 uppercase tracking-wide">Red Multidisciplinaria de Talentos Humanos Asociados</p>
+          <p class="text-[11px] text-gray-600 mt-0.5">Doctores, economistas, ingenieros y especialistas asignados por proyecto a medida.</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ==========================================
+         LÍNEA DEL TIEMPO INTERACTIVA (1978 – 2026)
+    =========================================== -->
+    <div class="mb-16">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <span class="text-xs font-bold uppercase text-red-700 tracking-wider">Trayectoria y Madurez Institucional</span>
+        <h3 class="text-2xl sm:text-3xl font-black text-gray-900 mt-1">Evolución Histórica (1978 – Actualidad)</h3>
+        <p class="text-xs sm:text-sm text-gray-600 mt-2">
+          Hitos clave de una firma que inició con investigaciones aplicadas en el Reino Unido y se ha consolidado como referente internacional en consultoría estratégica.
+        </p>
+      </div>
+
+      <!-- Contenedor Dinámico Renderizado por JavaScript -->
+      <div id="timeline-container" class="timeline-vertical max-w-4xl mx-auto py-4"></div>
+    </div>
+
+    <!-- ==========================================
+         RED MUNDIAL DE COOPERACIÓN Y ALIANZAS (24 ENTIDADES)
+    =========================================== -->
+    <div class="mb-16">
+      <div class="text-center max-w-3xl mx-auto mb-8">
+        <span class="text-xs font-bold uppercase text-green-700 tracking-wider">Alcance Global y Respaldo</span>
+        <h3 class="text-2xl sm:text-3xl font-black text-gray-900 mt-1">Red Mundial de Cooperación y Alianzas</h3>
+        <p class="text-xs sm:text-sm text-gray-600 mt-2">
+          Nuestra red internacional de 24 entidades permite conectar a nuestros clientes con fuentes de conocimiento, socios de inversión y canales comerciales en los 5 continentes.
+        </p>
+      </div>
+
+      <!-- Filtros por Región (Pestañas Interactivas) -->
+      <div class="flex flex-wrap items-center justify-center gap-2 mb-8" role="tablist">
+        <button class="alianza-tab px-4 py-2 rounded-xl text-xs font-bold bg-red-700 text-white shadow-sm transition" data-region="todas">
+          Todas las Entidades (24)
+        </button>
+        <button class="alianza-tab px-4 py-2 rounded-xl text-xs font-bold bg-white text-gray-700 hover:bg-gray-100 border border-gray-200 transition" data-region="europa">
+          Europa (8)
+        </button>
+        <button class="alianza-tab px-4 py-2 rounded-xl text-xs font-bold bg-white text-gray-700 hover:bg-gray-100 border border-gray-200 transition" data-region="norteamerica">
+          Norteamérica (7)
+        </button>
+        <button class="alianza-tab px-4 py-2 rounded-xl text-xs font-bold bg-white text-gray-700 hover:bg-gray-100 border border-gray-200 transition" data-region="asia">
+          Asia y Oceanía (7)
+        </button>
+        <button class="alianza-tab px-4 py-2 rounded-xl text-xs font-bold bg-white text-gray-700 hover:bg-gray-100 border border-gray-200 transition" data-region="latinoamerica">
+          Latinoamérica y Multilaterales (2)
+        </button>
+      </div>
+
+      <!-- Contenedor Dinámico de Alianzas Renderizado por JavaScript -->
+      <div id="alianzas-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+    </div>
+
+    <!-- ==========================================
+         ESTATUS LEGAL Y SEDES CORPORATIVAS
+    =========================================== -->
+    <div class="bg-white p-8 sm:p-10 rounded-3xl border border-gray-200 shadow-sm">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        
+        <div class="lg:col-span-6 space-y-4">
+          <span class="text-xs font-bold uppercase text-red-700 tracking-wider">Seguridad Jurídica y Cumplimiento</span>
+          <h3 class="text-2xl font-black text-gray-900">Estatus Legal y Registro Institucional</h3>
+          <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">
+            METODOGER S.R.L. cuenta con plena personalidad jurídica desde 1985, cumpliendo rigurosamente con todas las normativas mercantiles, tributarias y societarias de la República Bolivariana de Venezuela y estándares internacionales.
+          </p>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 text-xs">
+            <div class="p-3.5 rounded-xl bg-gray-50 border border-gray-200">
+              <p class="font-bold text-gray-900">Registro Mercantil Original:</p>
+              <p class="text-gray-600 mt-0.5">18/06/1985 • Nº 13, Tomo 61A</p>
+            </div>
+            <div class="p-3.5 rounded-xl bg-gray-50 border border-gray-200">
+              <p class="font-bold text-gray-900">Actualización Estatutaria:</p>
+              <p class="text-gray-600 mt-0.5">09/12/1996 • Nº 11, Tomo 77-A Qto</p>
+            </div>
+            <div class="p-3.5 rounded-xl bg-gray-50 border border-gray-200">
+              <p class="font-bold text-gray-900">RIF Corporativo:</p>
+              <p class="text-gray-600 mt-0.5">J-00225515-3</p>
+            </div>
+            <div class="p-3.5 rounded-xl bg-gray-50 border border-gray-200">
+              <p class="font-bold text-gray-900">NIT Institucional:</p>
+              <p class="text-gray-600 mt-0.5">0082497250</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sedes y Coordenadas -->
+        <div class="lg:col-span-6 bg-gradient-to-br from-gray-900 to-gray-800 p-7 rounded-2xl text-white space-y-5">
+          <h4 class="text-xs font-bold text-green-400 uppercase tracking-widest border-b border-gray-700 pb-2">
+            Sedes Corporativas y Canales de Enlace
+          </h4>
+
+          <div class="space-y-4 text-xs">
+            <div>
+              <p class="font-bold text-white text-sm">Oficina Principal — Caracas, Venezuela:</p>
+              <p class="text-gray-300 mt-1">Apartado de Correos Nº 47223, Los Chaguaramos, Caracas 1041-A.</p>
+              <p class="text-gray-400 mt-0.5">Teléfonos de Oficina: +58 212-6934413 / +58 212-6937536</p>
+              <p class="text-gray-400">Atención Móvil: +58 416-6280650 / +58 412-3800659</p>
+            </div>
+
+            <div class="pt-2 border-t border-gray-700">
+              <p class="font-bold text-white text-sm">Enlace en Estados Unidos — Miami, Florida:</p>
+              <p class="text-gray-300 mt-1">ShipNet 5-1107, 2240 North West, 87th Avenue, Miami, FL 33172, USA.</p>
+            </div>
+          </div>
+
+          <div class="pt-2">
+            <a href="servicios-contacto.html#presupuesto" class="w-full block text-center py-3 rounded-xl bg-red-700 hover:bg-red-800 text-white font-bold text-xs shadow transition">
+              Contactar con la Presidencia Ejecutiva
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ==========================================
+       FOOTER COMPLETO Y DATOS CORPORATIVOS
+  =========================================== -->
+  <footer class="bg-gray-900 text-gray-300 mt-auto border-t border-gray-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+      
+      <!-- Columna 1: Identidad Corporativa Oficial -->
+      <div class="space-y-4">
+        <a href="index.html" class="inline-block p-2.5 rounded-2xl bg-white shadow-sm border border-gray-100 hover:shadow transition">
+          <img src="assets/img/logo.png" alt="METODOGER Solutions OVG" class="h-11 sm:h-12 w-auto object-contain" />
+        </a>
+        <p class="text-xs text-gray-400 leading-relaxed">
+          Especialistas en consultoría gerencial, empresa familiar, protocolos de sucesión, estrategia internacional y desarrollo de capital humano desde 1985.
+        </p>
+        <div class="text-[11px] text-gray-400 space-y-1 pt-1">
+          <p><strong>RIF:</strong> J-00225515-3 • <strong>NIT:</strong> 0082497250</p>
+          <p><strong>Registro Mercantil:</strong> 18/06/1985 (Nº 13, Tomo 61A)</p>
+        </div>
+      </div>
+
+      <div class="space-y-3">
+        <h4 class="text-xs font-extrabold text-white uppercase tracking-wider">Sedes y Enlaces Oficiales</h4>
+        <div class="text-xs space-y-3 text-gray-400">
+          <div>
+            <p class="font-bold text-gray-200">Sede Principal — Caracas, Venezuela:</p>
+            <p>Apartado de Correos Nº 47223, Los Chaguaramos, Caracas 1041-A.</p>
+            <p class="mt-1">Oficina: +58 212-6934413 / 6937536</p>
+          </div>
+          <div>
+            <p class="font-bold text-gray-200">Enlace Internacional — EE.UU.:</p>
+            <p>ShipNet 5-1107, 2240 North West, 87th Avenue, Miami, FL 33172.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="space-y-3">
+        <h4 class="text-xs font-extrabold text-white uppercase tracking-wider">Contacto Directo</h4>
+        <ul class="text-xs space-y-2 text-gray-400">
+          <li>
+            <strong class="text-gray-200">Móvil / WhatsApp:</strong><br/>
+            +58 416-6280650 / +58 412-3800659
+          </li>
+          <li>
+            <strong class="text-gray-200">Correos Oficiales:</strong><br/>
+            <a href="mailto:omar.valenti@solutionsovg.com" class="hover:text-white transition">omar.valenti@solutionsovg.com</a><br/>
+            <a href="mailto:metodogerintlbusiness2018@gmail.com" class="hover:text-white transition">metodogerintlbusiness2018@gmail.com</a>
+          </li>
+          <li class="pt-1">
+            <a href="https://www.linkedin.com/in/omar-valenti-gonzalez-4135361b" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-blue-400 hover:text-blue-300 font-semibold">
+              <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              <span>LinkedIn Dr. Omar Valenti</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="space-y-3">
+        <h4 class="text-xs font-extrabold text-white uppercase tracking-wider">Boletín Ejecutivo</h4>
+        <p class="text-xs text-gray-400 leading-relaxed">
+          Reciba análisis periódicos sobre competitividad internacional, oportunidades de exportación y gestión estratégica PyME.
+        </p>
+        <form class="boletin-form space-y-2">
+          <input type="email" required placeholder="correo@empresa.com" class="w-full px-3.5 py-2.5 rounded-xl bg-gray-800 border border-gray-700 text-xs text-white placeholder-gray-500 focus:outline-none focus:border-red-600 transition" />
+          <button type="submit" class="w-full py-2.5 rounded-xl bg-red-700 hover:bg-red-800 text-white text-xs font-bold shadow transition">
+            Suscribirme al Boletín
+          </button>
+        </form>
+      </div>
+
+    </div>
+
+    <div class="border-t border-gray-800 py-6">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-gray-500">
+        <p>© 2026 METODOGER S.R.L. / OVG Solutions. Todos los derechos reservados. Caracas, Venezuela.</p>
+        <div class="flex items-center space-x-6">
+          <a href="index.html" class="hover:text-gray-300 transition">Inicio</a>
+          <a href="organizacion.html" class="hover:text-gray-300 transition">Organización</a>
+          <a href="servicios-contacto.html" class="hover:text-gray-300 transition">Servicios</a>
+          <a href="servicios-contacto.html#presupuesto" class="hover:text-gray-300 transition">Presupuesto</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>

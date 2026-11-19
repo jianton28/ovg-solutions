@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Servicios de Consultoría, Metodología y Casos de Éxito | METODOGER — Solutions OVG</title>
+  <meta name="description" content="Servicios corporativos de METODOGER: empresa familiar, plan de sucesión, negocios internacionales, 13 casos de éxito documentados y cotización formal de consultoría." />
+
+  <!-- Tailwind CSS vía CDN con configuración personalizada -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ovg: {
+              red: '#B91C1C',
+              redDark: '#991B1B',
+              redLight: '#FEF2F2',
+              green: '#3F7D20',
+              greenDark: '#2D5A16',
+              greenLight: '#F0FDF4',
+              dark: '#111827',
+              slate: '#374151',
+              bg: '#F9FAFB'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Favicon Oficial con el Símbolo Institucional -->
+  <link rel="icon" type="image/png" href="assets/img/logo-icon.png" />
+  
+  <!-- Estilos Corporativos Personalizados -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="bg-gray-50 text-gray-900 antialiased flex flex-col min-h-screen selection:bg-red-700 selection:text-white">
+
+  <!-- ==========================================
+       BARRA DE NAVEGACIÓN (GLASSMORPHISM)
+  =========================================== -->
+  <header class="navbar-glass sticky top-0 z-50 transition-all duration-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        
+        <!-- Logotipo Oficial METODOGER Solutions OVG -->
+        <a href="index.html" class="flex items-center group py-1" aria-label="Inicio - METODOGER Solutions OVG">
+          <img src="assets/img/logo.png" alt="METODOGER Solutions OVG - Consultoría Estratégica Internacional" class="h-12 sm:h-14 md:h-16 w-auto object-contain transition duration-200 group-hover:opacity-95" />
+        </a>
+
+        <!-- Enlaces Desktop -->
+        <nav class="hidden md:flex items-center space-x-8" aria-label="Navegación principal">
+          <a href="index.html" class="text-sm font-medium text-gray-600 hover:text-red-700 transition">Inicio</a>
+          <a href="organizacion.html" class="text-sm font-medium text-gray-600 hover:text-red-700 transition">Nuestra Organización</a>
+          <a href="servicios-contacto.html" class="text-sm font-bold text-red-700 border-b-2 border-red-700 pb-1" aria-current="page">Servicios y Casos</a>
+          <a href="#presupuesto" class="px-5 py-2.5 rounded-xl bg-red-700 hover:bg-red-800 text-white text-sm font-bold shadow-sm hover:shadow-md transition flex items-center gap-2">
+            <span>Solicitar Presupuesto</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+          </a>
+        </nav>
+
+        <!-- Botón Menú Móvil -->
+        <button id="mobile-menu-btn" class="md:hidden p-2.5 rounded-xl text-gray-700 hover:bg-gray-100 transition" aria-label="Abrir menú de navegación" aria-expanded="false">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Menú Desplegable Móvil -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 px-4 pt-3 pb-5 space-y-2 shadow-xl">
+      <a href="index.html" class="block px-3.5 py-2.5 rounded-xl text-gray-700 hover:bg-gray-50 font-medium text-sm">Inicio</a>
+      <a href="organizacion.html" class="block px-3.5 py-2.5 rounded-xl text-gray-700 hover:bg-gray-50 font-medium text-sm">Nuestra Organización</a>
+      <a href="servicios-contacto.html" class="block px-3.5 py-2.5 rounded-xl bg-red-50 text-red-700 font-bold text-sm">Servicios y Casos de Éxito</a>
+      <a href="#presupuesto" class="block text-center mt-3 px-4 py-2.5 rounded-xl bg-red-700 text-white font-bold text-sm shadow">
+        Solicitar Presupuesto
+      </a>
+    </div>
+  </header>
+
+  <!-- ==========================================
+       CABECERA DE SECCIÓN
+  =========================================== -->
+  <section class="bg-white border-b border-gray-200 py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <nav class="flex items-center gap-2 text-xs font-semibold text-gray-500 mb-2">
+        <a href="index.html" class="hover:text-red-700 transition">Inicio</a>
+        <span>/</span>
+        <span class="text-gray-900 font-bold">Portafolio y Casos</span>
+      </nav>
+      <h1 class="text-3xl sm:text-4xl font-black text-gray-900 tracking-tight">
+        Servicios de Consultoría Gerencial, Metodología y Casos de Éxito
+      </h1>
+      <p class="text-sm sm:text-base text-gray-600 mt-2 max-w-3xl">
+        Intervenciones organizacionales de alto nivel basadas en la <em>Investigación-Acción Aplicada</em>, especialización profunda en Empresa Familiar y 13 casos de éxito documentados en los 5 continentes.
+      </p>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       1. BASAMENTO METODOLÓGICO RIGUROSO
+  =========================================== -->
+  <section class="py-14 sm:py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-3xl mx-auto mb-12">
+      <span class="inline-block px-3 py-1 rounded-full bg-red-50 text-red-700 text-xs font-bold uppercase tracking-widest border border-red-200 mb-2">
+        Fundamentos de Clase Mundial
+      </span>
+      <h2 class="text-2xl sm:text-3xl font-black text-gray-900 tracking-tight">
+        Investigación-Acción Aplicada (Action Learning)
+      </h2>
+      <p class="text-xs sm:text-sm text-gray-600 mt-2 leading-relaxed">
+        Nuestras consultorías no son diagnósticos pasivos de escritorio. Aplicamos marcos metodológicos avalados por las principales escuelas de gerencia de Inglaterra y EE.UU., vinculando teoría avanzada con la resolución práctica de problemas en el mundo real.
+      </p>
+    </div>
+
+    <!-- Los 4 Pilares Teóricos -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+      
+      <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm card-hover card-hover-red">
+        <div class="w-10 h-10 rounded-xl bg-red-50 text-red-700 font-black text-sm flex items-center justify-center border border-red-100 mb-4">
+          RR
+        </div>
+        <h3 class="text-base font-bold text-gray-900">Dr. Reg Revans</h3>
+        <p class="text-xs font-semibold text-red-700 mt-0.5">Inglaterra • Action Learning</p>
+        <p class="text-xs text-gray-600 mt-2 leading-relaxed">
+          Pionero del <em>Aprendizaje en la Acción</em>: los directivos aprenden mejor resolviendo problemas reales con sus propios equipos de trabajo.
+        </p>
+      </div>
+
+      <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm card-hover card-hover-red">
+        <div class="w-10 h-10 rounded-xl bg-red-50 text-red-700 font-black text-sm flex items-center justify-center border border-red-100 mb-4">
+          ES
+        </div>
+        <h3 class="text-base font-bold text-gray-900">Dr. Edgar Schein</h3>
+        <p class="text-xs font-semibold text-red-700 mt-0.5">MIT Sloan • Process Consultation</p>
+        <p class="text-xs text-gray-600 mt-2 leading-relaxed">
+          <em>Consultoría de Procesos</em>: el consultor actúa facilitando que el cliente perciba, entienda y actúe sobre los hechos de su entorno organizacional.
+        </p>
+      </div>
+
+      <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm card-hover card-hover-green">
+        <div class="w-10 h-10 rounded-xl bg-green-50 text-green-700 font-black text-sm flex items-center justify-center border border-green-100 mb-4">
+          JM
+        </div>
+        <h3 class="text-base font-bold text-gray-900">Dr. John Morris</h3>
+        <p class="text-xs font-semibold text-green-700 mt-0.5">Manchester Business School • UK</p>
+        <p class="text-xs text-gray-600 mt-2 leading-relaxed">
+          Enfoque de <em>Esfuerzos Mancomunados (Joint Efforts)</em>: integración sinérgica entre la dirección general y los talentos de base.
+        </p>
+      </div>
+
+      <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm card-hover card-hover-green">
+        <div class="w-10 h-10 rounded-xl bg-green-50 text-green-700 font-black text-sm flex items-center justify-center border border-green-100 mb-4">
+          CS
+        </div>
+        <h3 class="text-base font-bold text-gray-900">Harvard & Sheffield</h3>
+        <p class="text-xs font-semibold text-green-700 mt-0.5">Case Studies Methodology</p>
+        <p class="text-xs text-gray-600 mt-2 leading-relaxed">
+          <em>Estudio de Casos de Investigación Aplicada</em>: análisis exhaustivo de situaciones empresariales complejas para deducir soluciones transferibles.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Fases del Diseño de un Programa de Consultoría -->
+    <div class="bg-gradient-to-br from-gray-900 via-gray-900 to-gray-800 rounded-3xl p-8 sm:p-10 text-white shadow-xl border border-gray-800">
+      <div class="max-w-2xl mb-8">
+        <span class="text-xs font-bold uppercase text-red-400 tracking-wider">Ciclo Metodológico OVG</span>
+        <h3 class="text-2xl font-black mt-1">Las 5 Fases del Diseño e Intervención</h3>
+        <p class="text-xs text-gray-400 mt-1">Cómo abordamos cada asignación desde distintas ópticas para asegurar rentabilidad y perennidad.</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+        
+        <div class="p-4 rounded-2xl bg-gray-800/80 border border-gray-700">
+          <span class="text-xs font-extrabold text-red-400">FASE 01</span>
+          <h4 class="text-sm font-bold text-white mt-1">Análisis de Necesidades</h4>
+          <p class="text-xs text-gray-400 mt-1.5 leading-relaxed">Evaluación integral del cliente, diagnóstico del entorno y definición de objetivos estratégicos.</p>
+        </div>
+
+        <div class="p-4 rounded-2xl bg-gray-800/80 border border-gray-700">
+          <span class="text-xs font-extrabold text-red-400">FASE 02</span>
+          <h4 class="text-sm font-bold text-white mt-1">Estudio de Cargos y Procesos</h4>
+          <p class="text-xs text-gray-400 mt-1.5 leading-relaxed">Revisión de perfiles de puesto, análisis biográfico de líderes y mapeo de flujos operativos en desarrollo.</p>
+        </div>
+
+        <div class="p-4 rounded-2xl bg-gray-800/80 border border-gray-700">
+          <span class="text-xs font-extrabold text-green-400">FASE 03</span>
+          <h4 class="text-sm font-bold text-white mt-1">Diseño de la Propuesta</h4>
+          <p class="text-xs text-gray-400 mt-1.5 leading-relaxed">Estrategias de tipologías y competencias clave a desarrollar con cronograma de entregables.</p>
+        </div>
+
+        <div class="p-4 rounded-2xl bg-gray-800/80 border border-gray-700">
+          <span class="text-xs font-extrabold text-green-400">FASE 04</span>
+          <h4 class="text-sm font-bold text-white mt-1">Ejecución en Terreno</h4>
+          <p class="text-xs text-gray-400 mt-1.5 leading-relaxed">Acompañamiento colaborativo (Joint Efforts), cursos in-company y mesas de trabajo directivas.</p>
+        </div>
+
+        <div class="p-4 rounded-2xl bg-gray-800/80 border border-gray-700">
+          <span class="text-xs font-extrabold text-green-400">FASE 05</span>
+          <h4 class="text-sm font-bold text-white mt-1">Perennidad y Evaluación</h4>
+          <p class="text-xs text-gray-400 mt-1.5 leading-relaxed">Medición de impacto, planes de crecimiento futuro y transferencia de herramientas metodológicas.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       2. PORTAFOLIO DE ÁREAS DE SERVICIO
+  =========================================== -->
+  <section id="servicios" class="py-14 sm:py-16 bg-white border-y border-gray-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="text-xs font-bold uppercase text-red-700 tracking-wider">Capacidades Especializadas</span>
+        <h2 class="text-3xl font-black text-gray-900 mt-1">Áreas de Servicio Corporativo</h2>
+        <p class="text-xs sm:text-sm text-gray-600 mt-2">
+          Soluciones modulares diseñadas para atender desde la gobernanza de la alta dirección hasta la operatividad comercial internacional.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-14">
+        
+        <!-- Área 1 -->
+        <div class="bg-gray-50 p-8 rounded-3xl border border-gray-200 shadow-sm card-hover">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 rounded-xl bg-red-100 text-red-700 font-black text-sm flex items-center justify-center">01</div>
+            <div>
+              <span class="text-xs font-bold text-red-700 uppercase">Organización y Talento</span>
+              <h3 class="text-lg font-black text-gray-900 leading-snug">Fortalecimiento Empresarial y Desarrollo de Recursos Humanos</h3>
+            </div>
+          </div>
+          <ul class="space-y-2.5 text-xs sm:text-sm text-gray-600">
+            <li class="flex items-start gap-2">
+              <span class="text-red-700 font-bold mt-0.5">•</span>
+              <span><strong>Desarrollo Gerencial y Supervisorio:</strong> Programas ejecutivos intensivos in-company y seminarios en liderazgo transformacional.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-red-700 font-bold mt-0.5">•</span>
+              <span><strong>Reingeniería Organizativa:</strong> Manuales de descripción de cargos, estudios de procesos y alineación con la estrategia directiva.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-red-700 font-bold mt-0.5">•</span>
+              <span><strong>Empoderamiento de Gestión Humana:</strong> Asesoría especializada para comités de talento, diagnóstico de clima y planes de carrera.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-red-700 font-bold mt-0.5">•</span>
+              <span><strong>Cursos y Seminarios a Medida:</strong> Formación aplicada al personal de apoyo, mandos medios y alta gerencia.</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Área 2 -->
+        <div class="bg-gray-50 p-8 rounded-3xl border border-gray-200 shadow-sm card-hover card-hover-green">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 rounded-xl bg-green-100 text-green-700 font-black text-sm flex items-center justify-center">02</div>
+            <div>
+              <span class="text-xs font-bold text-green-700 uppercase">Comercio Exterior y Red B2B</span>
+              <h3 class="text-lg font-black text-gray-900 leading-snug">Globalización, Negocios Internacionales y E-Business</h3>
+            </div>
+          </div>
+          <ul class="space-y-2.5 text-xs sm:text-sm text-gray-600">
+            <li class="flex items-start gap-2">
+              <span class="text-green-700 font-bold mt-0.5">•</span>
+              <span><strong>Metodología de Internacionalización:</strong> Diagnóstico de aptitud exportadora y selección de mercados objetivos de alta rentabilidad.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-green-700 font-bold mt-0.5">•</span>
+              <span><strong>Joint Ventures y Búsqueda de Socios:</strong> Prospección, evaluación y negociación con socios, agentes y distribuidores en destino.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-green-700 font-bold mt-0.5">•</span>
+              <span><strong>Misiones y Agendas Comerciales:</strong> Organización de tours de negocios bilaterales (Centroamérica, Caribe, Europa y Asia).</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-green-700 font-bold mt-0.5">•</span>
+              <span><strong>Representación de Firmas Extranjeras:</strong> Apoyo outsourcing para penetración en Venezuela y mercados de la región.</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Área 3: Destacada - Empresa Familiar (ancho completo abajo) -->
+
+        <!-- Área 4 -->
+        <div class="bg-gray-50 p-8 rounded-3xl border border-gray-200 shadow-sm card-hover md:col-span-2">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 rounded-xl bg-gray-200 text-gray-900 font-black text-sm flex items-center justify-center">03</div>
+            <div>
+              <span class="text-xs font-bold text-gray-700 uppercase">Emprendimiento y Tecnología</span>
+              <h3 class="text-lg font-black text-gray-900 leading-snug">Centro PyME, CEDIE y Proyectos Online</h3>
+            </div>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs sm:text-sm text-gray-600">
+            <ul class="space-y-2">
+              <li class="flex items-start gap-2">
+                <span class="text-gray-900 font-bold mt-0.5">•</span>
+                <span><strong>Tutoría Gerencial CEDIE:</strong> Asesoría en toma de decisiones estratégicas, finanzas y planes de negocio para emprendedores.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-gray-900 font-bold mt-0.5">•</span>
+                <span><strong>Incubación de Base Tecnológica:</strong> Vinculación universidad-empresa y fomento de unidades de innovación productiva.</span>
+              </li>
+            </ul>
+            <ul class="space-y-2">
+              <li class="flex items-start gap-2">
+                <span class="text-gray-900 font-bold mt-0.5">•</span>
+                <span><strong>Desarrollo de Portales Web Corporativos:</strong> Arquitectura de sitios ejecutivos a medida para posicionamiento internacional.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-gray-900 font-bold mt-0.5">•</span>
+                <span><strong>Auditoría Digital y B2B:</strong> Inserción en portales de comercio electrónico y catálogos transfronterizos.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ==========================================
+           MÓDULO DESTACADO: EMPRESA FAMILIAR Y SUCESIÓN
+      =========================================== -->
+      <div id="empresa-familiar" class="bg-gradient-to-r from-green-950 via-green-900 to-green-950 text-white rounded-3xl p-8 sm:p-12 shadow-2xl relative overflow-hidden">
+        <div class="max-w-3xl mb-10">
+          <span class="px-3 py-1 rounded-full bg-green-800 text-green-200 text-xs font-extrabold uppercase tracking-wider border border-green-700">
+            Módulo de Alta Especialización
+          </span>
+          <h3 class="text-2xl sm:text-3xl font-black mt-3">
+            Consultoría en la Empresa Familiar y Plan de Sucesión Directiva
+          </h3>
+          <p class="text-xs sm:text-sm text-green-100 mt-2 leading-relaxed">
+            Menos del 30% de las empresas familiares sobreviven el traspaso a la segunda generación, y solo un 12% a la tercera. Diseñamos estructuras institucionales que resuelven los dilemas emocionales y patrimoniales con rigor metodológico.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          
+          <div class="bg-green-900/60 p-6 rounded-2xl border border-green-700/80 space-y-2">
+            <span class="text-xs font-extrabold text-green-300">PASO 01</span>
+            <h4 class="text-base font-bold text-white">Diagnóstico y Familygrama</h4>
+            <p class="text-xs text-green-100/90 leading-relaxed">
+              Mapeo del sistema Familia-Empresa-Propiedad mediante el <em>Familygrama Estructural</em>: análisis del pasado, estado presente y proyecciones futuras de la estructura genealógica y de roles directivos.
+            </p>
+          </div>
+
+          <div class="bg-green-900/60 p-6 rounded-2xl border border-green-700/80 space-y-2">
+            <span class="text-xs font-extrabold text-green-300">PASO 02</span>
+            <h4 class="text-base font-bold text-white">Protocolo Familiar</h4>
+            <p class="text-xs text-green-100/90 leading-relaxed">
+              Pacto formal consensuado: jerarquización de valores familiares, normas de incorporación y remuneración de parientes, gobierno corporativo (Consejo de Familia y Junta Asesora) y mecanismos de arbitraje.
+            </p>
+          </div>
+
+          <div class="bg-green-900/60 p-6 rounded-2xl border border-green-700/80 space-y-2">
+            <span class="text-xs font-extrabold text-green-300">PASO 03</span>
+            <h4 class="text-base font-bold text-white">Plan de Perennidad y Traspaso</h4>
+            <p class="text-xs text-green-100/90 leading-relaxed">
+              Estructura jurídica, societaria y fiscal con soporte legal. Cronograma de traspaso gradual de facultades directivas para garantizar la continuidad del negocio y el resguardo patrimonial.
+            </p>
+          </div>
+
+        </div>
+
+        <div class="mt-8 pt-6 border-t border-green-800 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <p class="text-xs text-green-200">
+            Acreditado ante <strong>The Family Firm Institute (FFI, Boston, EE.UU.)</strong>.
+          </p>
+          <a href="#presupuesto" class="px-6 py-2.5 rounded-xl bg-white text-green-950 font-bold text-xs hover:bg-green-50 shadow transition">
+            Solicitar Diagnóstico Familiar Confidencial
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================
+       3. CASOS DE ÉXITO / CONSULTORÍAS REALIZADAS (13 CASOS)
+  =========================================== -->
+  <section class="py-14 sm:py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-3xl mx-auto mb-10">
+      <span class="text-xs font-bold uppercase text-red-700 tracking-wider">Historial Comprobado</span>
+      <h2 class="text-3xl font-black text-gray-900 mt-1">13 Casos de Éxito Documentados</h2>
+      <p class="text-xs sm:text-sm text-gray-600 mt-2">
+        Evidencia tangible de consultorías ejecutadas en más de 30 sectores y 15 países, abordando desde transacciones de M&A hasta misiones diplomáticas multisectoriales.
+      </p>
+    </div>
+
+    <!-- Pestañas de Filtro Interactivas -->
+    <div class="flex flex-wrap items-center justify-center gap-2 mb-8" role="tablist">
+      <button class="caso-tab px-4 py-2 rounded-xl text-xs font-bold bg-red-700 text-white shadow-sm transition" data-categoria="todos">
+        Todos los Casos (13)
+      </button>
+      <button class="caso-tab px-4 py-2 rounded-xl text-xs font-bold bg-white text-gray-700 hover:bg-gray-100 border border-gray-200 transition" data-categoria="comercio">
+        Comercio e Internacionalización (3)
+      </button>
+      <button class="caso-tab px-4 py-2 rounded-xl text-xs font-bold bg-white text-gray-700 hover:bg-gray-100 border border-gray-200 transition" data-categoria="joint-ventures">
+        Joint Ventures e Inversiones (4)
+      </button>
+      <button class="caso-tab px-4 py-2 rounded-xl text-xs font-bold bg-white text-gray-700 hover:bg-gray-100 border border-gray-200 transition" data-categoria="franquicias-pymes">
+        Franquicias y PyMEs (3)
+      </button>
+      <button class="caso-tab px-4 py-2 rounded-xl text-xs font-bold bg-white text-gray-700 hover:bg-gray-100 border border-gray-200 transition" data-categoria="diplomacia-telecom">
+        Diplomacia y Telecomunicaciones (3)
+      </button>
+    </div>
+
+    <!-- Contenedor Dinámico Renderizado por JavaScript -->
+    <div id="casos-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12"></div>
+
+    <!-- Sectores Industriales Atendidos -->
+    <div class="bg-white p-8 rounded-3xl border border-gray-200 shadow-sm">
+      <h3 class="text-sm font-extrabold uppercase text-gray-900 tracking-wider mb-4">Sectores Industriales y Comerciales Atendidos</h3>
+      <div class="flex flex-wrap gap-2 text-xs font-semibold">
+        <span class="px-3 py-1.5 rounded-lg bg-gray-100 text-gray-800">Petroquímica y Química</span>
+        <span class="px-3 py-1.5 rounded-lg bg-gray-100 text-gray-800">Banca, Finanzas y Seguros</span>
+        <span class="px-3 py-1.5 rounded-lg bg-gray-100 text-gray-800">Telecomunicaciones y Redes</span>
+        <span class="px-3 py-1.5 rounded-lg bg-gray-100 text-gray-800">Farmacéutico y Salud</span>
+        <span class="px-3 py-1.5 rounded-lg bg-gray-100 text-gray-800">Cemento y Construcción</span>
+        <span class="px-3 py-1.5 rounded-lg bg-gray-100 text-gray-800">Aluminio y Minería</span>
+        <span class="px-3 py-1.5 rounded-lg bg-gray-100 text-gray-800">Educación Superior y Escuelas de Negocios</span>
+        <span class="px-3 py-1.5 rounded-lg bg-gray-100 text-gray-800">Franquicias y Retail</span>
+        <span class="px-3 py-1.5 rounded-lg bg-gray-100 text-gray-800">Metalmecánico y Manufactura</span>
+        <span class="px-3 py-1.5 rounded-lg bg-gray-100 text-gray-800">Textil y Confección</span>
+        <span class="px-3 py-1.5 rounded-lg bg-gray-100 text-gray-800">Madera y Mobiliario</span>
+        <span class="px-3 py-1.5 rounded-lg bg-gray-100 text-gray-800">Cámaras de Exportadores y Diplomacia Comercial</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       4. SECCIÓN DE CONTACTO Y SOLICITUD DE PRESUPUESTO
+  =========================================== -->
+  <section id="presupuesto" class="py-14 sm:py-16 bg-white border-t border-gray-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-xs font-bold uppercase text-red-700 tracking-wider">Atención Ejecutiva Personalizada</span>
+        <h2 class="text-3xl font-black text-gray-900 mt-1">Solicitud de Presupuesto y Contacto</h2>
+        <p class="text-xs sm:text-sm text-gray-600 mt-2">
+          Complete el formulario para recibir una propuesta estructurada o contáctenos por nuestros canales oficiales en Venezuela y EE.UU.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+        
+        <!-- Canales Oficiales y Sedes -->
+        <div class="lg:col-span-5 bg-gray-900 rounded-3xl p-8 text-white space-y-6 shadow-xl border border-gray-800">
+          <div>
+            <span class="text-xs font-bold text-red-400 uppercase tracking-widest">Atención Directa</span>
+            <h3 class="text-2xl font-black text-white mt-1">Canales Oficiales</h3>
+            <p class="text-xs text-gray-400 mt-1">Atención bilingüe en español e inglés.</p>
+          </div>
+
+          <div class="space-y-4 text-xs text-gray-300">
+            <div>
+              <p class="font-bold text-white text-sm">Teléfonos Móviles / WhatsApp Directo:</p>
+              <p class="mt-1">+58 416-6280650 (Presidencia Ejecutiva)</p>
+              <p>+58 412-3800659</p>
+            </div>
+
+            <div class="pt-2 border-t border-gray-800">
+              <p class="font-bold text-white text-sm">Líneas de Oficina y Fax (Caracas):</p>
+              <p class="mt-1">+58 212-6934413 / +58 212-6937536</p>
+            </div>
+
+            <div class="pt-2 border-t border-gray-800">
+              <p class="font-bold text-white text-sm">Correos Electrónicos Oficiales:</p>
+              <p class="mt-1"><a href="mailto:omar.valenti@solutionsovg.com" class="text-green-400 hover:underline">omar.valenti@solutionsovg.com</a></p>
+              <p><a href="mailto:metodogerintlbusiness2018@gmail.com" class="hover:underline">metodogerintlbusiness2018@gmail.com</a></p>
+              <p><a href="mailto:metodogerconsultoria2022@gmail.com" class="hover:underline">metodogerconsultoria2022@gmail.com</a></p>
+            </div>
+
+            <div class="pt-2 border-t border-gray-800">
+              <p class="font-bold text-white text-sm">Sedes Oficiales:</p>
+              <p class="mt-1"><strong>Caracas:</strong> Apartado Postal 47223, Los Chaguaramos, Caracas 1041-A, Venezuela.</p>
+              <p class="mt-0.5"><strong>Miami:</strong> ShipNet 5-1107, 2240 NW 87th Ave, Miami, FL 33172, USA.</p>
+            </div>
+          </div>
+
+          <div class="pt-2">
+            <a href="https://wa.me/584166280650" target="_blank" rel="noopener noreferrer" class="w-full py-3 rounded-xl bg-green-600 hover:bg-green-700 text-white font-bold text-xs flex items-center justify-center gap-2 shadow transition">
+              <span>Abrir Chat de WhatsApp con el Dr. Omar Valenti</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Formulario Funcional de Presupuesto con Conexión a WhatsApp -->
+        <div class="lg:col-span-7 bg-white p-8 sm:p-10 rounded-3xl border border-gray-200 shadow-sm">
+          <h3 class="text-2xl font-black text-gray-900">Formulario de Presupuesto</h3>
+          <p class="text-xs text-gray-600 mt-1 mb-6">
+            Los datos se estructurarán automáticamente para ser despachados hacia nuestra línea ejecutiva de WhatsApp y correo de soporte.
+          </p>
+
+          <form id="presupuesto-form" class="space-y-4">
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label for="nombre" class="block text-xs font-bold text-gray-700 uppercase mb-1">Nombre y Apellido *</label>
+                <input type="text" id="nombre" required placeholder="Ej. Carlos Mendoza" class="w-full px-4 py-2.5 rounded-xl border border-gray-300 text-xs sm:text-sm focus:outline-none focus:border-red-700 transition" />
+              </div>
+              <div>
+                <label for="empresa" class="block text-xs font-bold text-gray-700 uppercase mb-1">Empresa / Organización</label>
+                <input type="text" id="empresa" placeholder="Nombre de su organización" class="w-full px-4 py-2.5 rounded-xl border border-gray-300 text-xs sm:text-sm focus:outline-none focus:border-red-700 transition" />
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label for="email" class="block text-xs font-bold text-gray-700 uppercase mb-1">Correo Electrónico *</label>
+                <input type="email" id="email" required placeholder="correo@empresa.com" class="w-full px-4 py-2.5 rounded-xl border border-gray-300 text-xs sm:text-sm focus:outline-none focus:border-red-700 transition" />
+              </div>
+              <div>
+                <label for="telefono" class="block text-xs font-bold text-gray-700 uppercase mb-1">Teléfono Móvil / WhatsApp</label>
+                <input type="tel" id="telefono" placeholder="+58 412 1234567" class="w-full px-4 py-2.5 rounded-xl border border-gray-300 text-xs sm:text-sm focus:outline-none focus:border-red-700 transition" />
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label for="pais" class="block text-xs font-bold text-gray-700 uppercase mb-1">País / Ciudad</label>
+                <input type="text" id="pais" placeholder="Ej. Venezuela, Caracas" class="w-full px-4 py-2.5 rounded-xl border border-gray-300 text-xs sm:text-sm focus:outline-none focus:border-red-700 transition" />
+              </div>
+              <div>
+                <label for="area-servicio" class="block text-xs font-bold text-gray-700 uppercase mb-1">Área de Interés *</label>
+                <select id="area-servicio" class="w-full px-4 py-2.5 rounded-xl border border-gray-300 text-xs sm:text-sm focus:outline-none focus:border-red-700 bg-white transition">
+                  <option value="Consultoría en Empresa Familiar y Sucesión">Empresa Familiar y Plan de Sucesión</option>
+                  <option value="Estrategia de Negocios Internacionales y Exportación">Negocios Internacionales y Exportación</option>
+                  <option value="Joint Ventures y Alianzas de Inversión">Joint Ventures y Alianzas de Inversión</option>
+                  <option value="Desarrollo Gerencial y Reingeniería de RRHH">Desarrollo Gerencial y Reingeniería de RRHH</option>
+                  <option value="Centro PyME, CEDIE y Emprendimiento">Centro PyME, CEDIE y Emprendimiento</option>
+                  <option value="Proyectos Digitales y Comercio Electrónico B2B">Proyectos Digitales y E-Commerce B2B</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label for="mensaje" class="block text-xs font-bold text-gray-700 uppercase mb-1">Descripción del Requerimiento u Objetivos *</label>
+              <textarea id="mensaje" rows="4" required placeholder="Indique brevemente el giro de su empresa, desafíos actuales o metas deseadas para coordinar la asignación..." class="w-full px-4 py-2.5 rounded-xl border border-gray-300 text-xs sm:text-sm focus:outline-none focus:border-red-700 transition"></textarea>
+            </div>
+
+            <button type="submit" class="w-full py-3.5 rounded-xl bg-red-700 hover:bg-red-800 text-white font-bold text-xs sm:text-sm shadow-md hover:shadow-lg transition flex items-center justify-center gap-2">
+              <span>Enviar Solicitud a WhatsApp Oficial</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+            </button>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FOOTER COMPLETO Y DATOS CORPORATIVOS
+  =========================================== -->
+  <footer class="bg-gray-900 text-gray-300 mt-auto border-t border-gray-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+      
+      <!-- Columna 1: Identidad Corporativa Oficial -->
+      <div class="space-y-4">
+        <a href="index.html" class="inline-block p-2.5 rounded-2xl bg-white shadow-sm border border-gray-100 hover:shadow transition">
+          <img src="assets/img/logo.png" alt="METODOGER Solutions OVG" class="h-11 sm:h-12 w-auto object-contain" />
+        </a>
+        <p class="text-xs text-gray-400 leading-relaxed">
+          Especialistas en consultoría gerencial, empresa familiar, protocolos de sucesión, estrategia internacional y desarrollo de capital humano desde 1985.
+        </p>
+        <div class="text-[11px] text-gray-400 space-y-1 pt-1">
+          <p><strong>RIF:</strong> J-00225515-3 • <strong>NIT:</strong> 0082497250</p>
+          <p><strong>Registro Mercantil:</strong> 18/06/1985 (Nº 13, Tomo 61A)</p>
+        </div>
+      </div>
+
+      <div class="space-y-3">
+        <h4 class="text-xs font-extrabold text-white uppercase tracking-wider">Sedes y Enlaces Oficiales</h4>
+        <div class="text-xs space-y-3 text-gray-400">
+          <div>
+            <p class="font-bold text-gray-200">Sede Principal — Caracas, Venezuela:</p>
+            <p>Apartado de Correos Nº 47223, Los Chaguaramos, Caracas 1041-A.</p>
+            <p class="mt-1">Oficina: +58 212-6934413 / 6937536</p>
+          </div>
+          <div>
+            <p class="font-bold text-gray-200">Enlace Internacional — EE.UU.:</p>
+            <p>ShipNet 5-1107, 2240 North West, 87th Avenue, Miami, FL 33172.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="space-y-3">
+        <h4 class="text-xs font-extrabold text-white uppercase tracking-wider">Contacto Directo</h4>
+        <ul class="text-xs space-y-2 text-gray-400">
+          <li>
+            <strong class="text-gray-200">Móvil / WhatsApp:</strong><br/>
+            +58 416-6280650 / +58 412-3800659
+          </li>
+          <li>
+            <strong class="text-gray-200">Correos Oficiales:</strong><br/>
+            <a href="mailto:omar.valenti@solutionsovg.com" class="hover:text-white transition">omar.valenti@solutionsovg.com</a><br/>
+            <a href="mailto:metodogerintlbusiness2018@gmail.com" class="hover:text-white transition">metodogerintlbusiness2018@gmail.com</a>
+          </li>
+          <li class="pt-1">
+            <a href="https://www.linkedin.com/in/omar-valenti-gonzalez-4135361b" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-blue-400 hover:text-blue-300 font-semibold">
+              <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              <span>LinkedIn Dr. Omar Valenti</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="space-y-3">
+        <h4 class="text-xs font-extrabold text-white uppercase tracking-wider">Boletín Ejecutivo</h4>
+        <p class="text-xs text-gray-400 leading-relaxed">
+          Reciba análisis periódicos sobre competitividad internacional, oportunidades de exportación y gestión estratégica PyME.
+        </p>
+        <form class="boletin-form space-y-2">
+          <input type="email" required placeholder="correo@empresa.com" class="w-full px-3.5 py-2.5 rounded-xl bg-gray-800 border border-gray-700 text-xs text-white placeholder-gray-500 focus:outline-none focus:border-red-600 transition" />
+          <button type="submit" class="w-full py-2.5 rounded-xl bg-red-700 hover:bg-red-800 text-white text-xs font-bold shadow transition">
+            Suscribirme al Boletín
+          </button>
+        </form>
+      </div>
+
+    </div>
+
+    <div class="border-t border-gray-800 py-6">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-gray-500">
+        <p>© 2026 METODOGER S.R.L. / OVG Solutions. Todos los derechos reservados. Caracas, Venezuela.</p>
+        <div class="flex items-center space-x-6">
+          <a href="index.html" class="hover:text-gray-300 transition">Inicio</a>
+          <a href="organizacion.html" class="hover:text-gray-300 transition">Organización</a>
+          <a href="servicios-contacto.html" class="hover:text-gray-300 transition">Servicios</a>
+          <a href="#presupuesto" class="hover:text-gray-300 transition">Presupuesto</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
